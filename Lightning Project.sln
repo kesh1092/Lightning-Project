@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lightning Project", "Assembly-CSharp-firstpass.csproj", "{ED6E8E86-57F4-F5AD-8BA5-EB11CCCACF99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lightning Project", "Assembly-CSharp.csproj", "{D78FB324-CCE3-D523-A620-50DD447CA468}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lightning Project", "Assembly-CSharp-Editor-firstpass.csproj", "{1D231750-A94B-023C-AA41-C349966B05BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED6E8E86-57F4-F5AD-8BA5-EB11CCCACF99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED6E8E86-57F4-F5AD-8BA5-EB11CCCACF99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED6E8E86-57F4-F5AD-8BA5-EB11CCCACF99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED6E8E86-57F4-F5AD-8BA5-EB11CCCACF99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D78FB324-CCE3-D523-A620-50DD447CA468}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D78FB324-CCE3-D523-A620-50DD447CA468}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D78FB324-CCE3-D523-A620-50DD447CA468}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D78FB324-CCE3-D523-A620-50DD447CA468}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D231750-A94B-023C-AA41-C349966B05BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D231750-A94B-023C-AA41-C349966B05BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D231750-A94B-023C-AA41-C349966B05BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D231750-A94B-023C-AA41-C349966B05BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

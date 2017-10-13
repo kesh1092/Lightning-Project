@@ -35,7 +35,6 @@ public class WinByContact : MonoBehaviour
 			//Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
 			gameController.GameWon();
 			Destroy(other.gameObject);
-			Time.timeScale = 0;
 		}
 		//gameController.AddScore (scoreValue);
 		//Destroy(other.gameObject);

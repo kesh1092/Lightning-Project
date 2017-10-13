@@ -11,18 +11,21 @@ public class GameController : MonoBehaviour
 	public float startWait;
 	public float waveWait;
 	public GameObject text;
+	public GameObject text2;
 
 	//public GUIText scoreText;
 	//public GUIText restartText;
 	//public GUIText gameOverText;
 
 	private bool gameOver;
+	private bool gameWon;
 	private bool restart;
 	//private int score;
 
 	void Start()
 	{
 		gameOver = false;
+		gameWon = false;
 		restart = false;
 		//restartText.text = " ";
 		//gameOverText.text = " ";
@@ -42,11 +45,26 @@ public class GameController : MonoBehaviour
 				text.gameObject.SetActive(false);
 			}
 		}
+			
 		if (gameOver) 
 		{
 			//restartText.text = "Press 'R' for Restart";
 			restart = true;
 			//break;
+		}
+		if (gameWon) 
+		{ 
+			text2.gameObject.SetActive(true);
+			if (Input.GetKeyDown (KeyCode.Space)) 
+			{
+				Application.LoadLevel(Application.loadedLevel);
+				text2.gameObject.SetActive(false);
+			}
+			if (Input.GetKeyDown (KeyCode.R)) 
+			{
+				Application.LoadLevel(Application.loadedLevel);
+				text2.gameObject.SetActive(false);
+			}
 		}
 	}
 
@@ -88,5 +106,10 @@ public class GameController : MonoBehaviour
 	{
 		//gameOverText.text = "Game Over!";
 		gameOver = true;
+	}
+	public void GameWon()
+	{
+		//gameOverText.text = "Game Over!";
+		gameWon = true;
 	}
 }

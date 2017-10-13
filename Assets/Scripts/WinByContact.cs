@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyByContact : MonoBehaviour 
+public class WinByContact : MonoBehaviour 
 { //Order is ignored for destroy, as the object isnt immedietly destroyed but instead put in a queue to be destroyed at the end of each frame.
 
-	public GameObject explosion;
-	public GameObject playerExplosion;
+	//public GameObject explosion;
+	//public GameObject playerExplosion;
 	//public int scoreValue;
 	private GameController gameController;
 
@@ -32,9 +32,10 @@ public class DestroyByContact : MonoBehaviour
 		//Instantiate(explosion, transform.position, transform.rotation);
 		if (other.tag == "Player") 
 		{
-			Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
-			gameController.GameOver();
+			//Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
+			gameController.GameWon();
 			Destroy(other.gameObject);
+			Time.timeScale = 0;
 		}
 		//gameController.AddScore (scoreValue);
 		//Destroy(other.gameObject);

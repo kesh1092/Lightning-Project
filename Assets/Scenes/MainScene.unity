@@ -7505,7 +7505,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1130108778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8662,7 +8662,7 @@ MonoBehaviour:
   spawnWait: 0
   startWait: 0
   waveWait: 0
-  text: {fileID: 0}
+  text: {fileID: 1130108777}
 --- !u!4 &1358126702
 Transform:
   m_ObjectHideFlags: 0

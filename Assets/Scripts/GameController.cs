@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour 
 {
@@ -57,7 +58,10 @@ public class GameController : MonoBehaviour
 			text2.gameObject.SetActive(true);
 			if (Input.GetKeyDown (KeyCode.Space)) 
 			{
-				Application.LoadLevel(Application.loadedLevel);
+				foreach (GameObject o in Object.FindObjectsOfType<GameObject>()) {
+					Destroy(o);
+				}
+				SceneManager.LoadScene("Level 2");
 				text2.gameObject.SetActive(false);
 			}
 			if (Input.GetKeyDown (KeyCode.R)) 

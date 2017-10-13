@@ -24,6 +24,7 @@ public class DestroyByContact : MonoBehaviour
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
+		//Debug.Log("Hit Something");
 		//Debug.Log (other.name);
 		//if (other.tag == "Boundary") 
 		//{
@@ -32,6 +33,7 @@ public class DestroyByContact : MonoBehaviour
 		//Instantiate(explosion, transform.position, transform.rotation);
 		if (other.tag == "Player") 
 		{
+			//Debug.Log("Hit Player");
 			Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
 			gameController.GameOver();
 			Destroy(other.gameObject);

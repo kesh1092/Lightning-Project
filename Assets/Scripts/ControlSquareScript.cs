@@ -20,15 +20,15 @@ public class ControlSquareScript : MonoBehaviour
 	// private Rotate_Disregard_original[] foo1;
 
 
-	void Awake()
-	{
-		goParent = transform.parent.gameObject;
-		//		Square_Rotate dd = GetComponent<Square_Rotate>();
-
-		//		dd = transform.parent.parent.gameObject;
-		// foo1 = dd.GetComponentsInChildren<Rotate_Disregard_original>();		
-
-	}	
+//	void Awake()
+//	{
+//		goParent = transform.parent.gameObject;
+//		//		Square_Rotate dd = GetComponent<Square_Rotate>();
+//
+//		//		dd = transform.parent.parent.gameObject;
+//		// foo1 = dd.GetComponentsInChildren<Rotate_Disregard_original>();		
+//
+//	}	
 
 
 	void Start()

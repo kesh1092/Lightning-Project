@@ -1,0 +1,9 @@
+W - Up
+A - Left
+S - Down
+D - Right
+
+Space Bar - Jump
+
+Left Bracket '[' - Rotate Left
+Right Bracket ']' - Rotate Right
